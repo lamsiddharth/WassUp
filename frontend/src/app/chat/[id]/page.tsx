@@ -1,3 +1,4 @@
+import ChatBase from '@/components/chat/ChatBase'
 import React from 'react'
 
 type Props = {}
@@ -7,6 +8,7 @@ const page = ({ params }: { params: { id: string }}) => {
     return (
     <div>
         Hello
+        <ChatBase groupId={params.id} />
     </div>
   )
 }
